@@ -1,0 +1,96 @@
+Which airline has the most flights listed?
+KLM Royal Dutch Airlines
+
+-----------------------------------------------------------------------------------------
+
+
+What are the top three most frequented destinations?
+layover_locations
+LOCSFO    7
+LOCIAE    6
+LOCTNN    6
+Name: count, dtype: int64
+-----------------------------------------------------------------------------------------
+
+Number of bookings for American Airlines yesterday.
+0
+-----------------------------------------------------------------------------------------
+
+Average flight delay per airline.
+    airline_id              airline_name  delay_minutes
+0            1          American Airline      68.976000
+1            2           Delta Air Lines      -9.242063
+2            3           United Airlines       1.810865
+3            4        Southwest Airlines     -54.551257
+4            5           JetBlue Airways      25.406375
+5            6           Alaska Airlines      22.955253
+6            7           Spirit Airlines      -6.007366
+7            8         Frontier Airlines      11.795276
+8            9         Hawaiian Airlines     -18.632000
+9           10             Allegiant Air     -25.649446
+10          11          SkyWest Airlines     -21.892857
+11          12                Air Canada       2.416667
+12          13           British Airways      25.044905
+13          14                 Lufthansa      12.356725
+14          15                Air France       2.659381
+15          16  KLM Royal Dutch Airlines     -41.150084
+16          17                    Qantas      16.454710
+17          18                  Emirates      19.244526
+18          19        Singapore Airlines      26.661568
+-----------------------------------------------------------------------------------------
+
+Month with the highest number of bookings.
+October
+-----------------------------------------------------------------------------------------
+
+Patterns in booking cancellations, focusing on specific days or airlines with high cancellation rates.
+Top 5 Airlines with Highest Cancellation Rates:
+airline_name
+Alaska Airlines       37.55
+Southwest Airlines    36.56
+JetBlue Airways       35.66
+American Airline      34.20
+Hawaiian Airlines     34.00
+dtype: float64
+Days with Highest Cancellation Rates:
+day_of_week
+Saturday    35.19
+Tuesday     34.09
+Monday      33.43
+dtype: float64
+-----------------------------------------------------------------------------------------
+
+
+Analyze seat occupancy to find the most and least popular flights.
+Most Popular Flights by Passenger Count:
+     airline_name  flight_number  scheduled_departure  passenger_count  seat_number
+0      Air Canada         1016.0  2023-12-22 03:37:29                1            1
+6670    Lufthansa         6094.0  2023-04-16 11:34:53                1            1
+6663    Lufthansa         6006.0  2023-05-06 21:30:45                1            1
+6664    Lufthansa         6013.0  2023-12-30 20:08:36                1            1
+6665    Lufthansa         6022.0  2023-04-03 21:22:40                1            1
+
+Least Popular Flights by Passenger Count:
+     airline_name  flight_number  scheduled_departure  passenger_count  seat_number
+0      Air Canada         1016.0  2023-12-22 03:37:29                1            1
+6663    Lufthansa         6006.0  2023-05-06 21:30:45                1            1
+6664    Lufthansa         6013.0  2023-12-30 20:08:36                1            1
+6665    Lufthansa         6022.0  2023-04-03 21:22:40                1            1
+6666    Lufthansa         6023.0  2023-11-13 15:10:11                1            1
+
+Flights by Occupancy Rate:
+         airline_name  flight_number  scheduled_departure  passenger_count  seat_number  occupancy_rate
+0          Air Canada         1016.0  2023-12-22 03:37:29                1            1           100.0
+6670        Lufthansa         6094.0  2023-04-16 11:34:53                1            1           100.0
+6663        Lufthansa         6006.0  2023-05-06 21:30:45                1            1           100.0
+6664        Lufthansa         6013.0  2023-12-30 20:08:36                1            1           100.0
+6665        Lufthansa         6022.0  2023-04-03 21:22:40                1            1           100.0
+...               ...            ...                  ...              ...          ...             ...
+3333  Delta Air Lines         3021.0  2023-11-27 03:21:23                1            1           100.0
+3334  Delta Air Lines         3036.0  2023-05-21 23:05:51                1            1           100.0
+3335  Delta Air Lines         3042.0  2023-03-10 03:49:08                1            1           100.0
+3336  Delta Air Lines         3121.0  2023-04-10 19:51:26                1            1           100.0
+9999  United Airlines         9987.0  2023-09-14 02:34:10                1            1           100.0
+
+[10000 rows x 6 columns]
+
